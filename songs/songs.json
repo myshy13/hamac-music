@@ -5,28 +5,40 @@
             "artist": "rick astley",
             "genre": "pop",
             "file": "never-gonna-give-you-up.mp3",
-            "url": "songs/never-gonna-give-you-up.mp3"
+            "url": "songs/nevergonnagiveyouup/never-gonna-give-you-up.mp3",
+            "logo": "songs/nevergonnagiveyouup/logo.jpg"
         },
         {
             "title": "montagem coma",
             "artist": "Andromeda",
             "genre": "phonk",
-            "file": "montagem-coma.mp3",
-            "url": "songs/montagem-coma.mp3"
+            "file": "montagemcoma/montagem-coma.mp3",
+            "url": "songs/montagemcoma/montagem-coma.mp3",
+            "logo": "songs/montagemcoma/logo.webp"
         },
         {
             "title": "montagem tomada",
             "artist": "MXZI",
             "genre": "phonk",
-            "file": "montagem-tomada.mp3",
-            "url": "songs/montagem-tomada.mp3"
+            "file": "montagemtomada/montagem-tomada.mp3",
+            "url": "songs/montagemtomada/montagem-tomada.mp3",
+            "logo": "songs/montagemtomada/logo.webp"
         },
         {
             "title": "rush e",
             "artist": "sheet music boss",
             "genre": "piano",
-            "file": "rush-e.mp3",
-            "url": "songs/rush-e.mp3"
+            "file": "rushe/rush-e.mp3",
+            "url": "songs/rushe/rush-e.mp3",
+            "logo": "songs/rushe/logo.webp"
+        },
+        {
+            "title": "montagem rugada",
+            "artist": "JXNDRO",
+            "genre": "phonk",
+            "file": "montagemrugada/montagemrugada.mp3",
+            "url": "songs/montagemrugada/montagemrugada.mp3",
+            "logo": "songs/montagemrugada/logo.jpg"
         }
     ]
 }

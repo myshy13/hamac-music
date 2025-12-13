@@ -29,6 +29,7 @@ function displayResults(results) {
     const songElement = document.createElement("div");
     songElement.className = "song";
     songElement.innerHTML = `
+      <img src="${song.logo}" alt="${song.title}" class="song-logo"><br>
       <h3>${song.title}</h3>
       <span>${song.artist}</span><br>
     `;
