@@ -98,11 +98,11 @@
         position: relative;
         border-radius: 10px;
         box-shadow: 3px 3px 7px #c5c5c5, -1px -1px 7px #939393;
-        width: 10em;
+        width: 9vw;
         display: flex;
         align-items: center;
         flex-direction: column;
-        height: 9em;
+        aspect-ratio: 1 / 1;
         box-sizing: content-box;
         width: 10em;
         text-align: center;
@@ -132,11 +132,21 @@
         z-index: 5;
         opacity: 1;
       }
+      .song {
+        transition: all 0.5s ease;
+      }
       .song h3, .song span {
         transition: all 0.3s ease;
         color: white;
         opacity: 0;
       }
+      .montagem-tomada .playButton {
+        filter: invert(1);
+      }
+      .song:hover {
+        box-shadow: 0 4px 16px 0 var(--avg-shadow, #e6ddc7);
+      }
+      
     </style>
   </head>
   <body>

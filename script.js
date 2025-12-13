@@ -13,8 +13,7 @@ searchForm.addEventListener("submit", function (event) {
       const results = songs["songs"].filter(
         (song) =>
           song.title.toLowerCase().includes(query) ||
-          song.artist.toLowerCase().includes(query) ||
-          song.album.toLowerCase().includes(query)
+          song.artist.toLowerCase().includes(query)
       );
 
       displayResults(results);
@@ -27,12 +26,13 @@ function displayResults(results) {
 
   results.forEach((song) => {
     const songElement = document.createElement("div");
-    songElement.className = "song";
+    songElement.className = `song ${song.title.replace(/\s+/g, '-').toLowerCase()}`;
     songElement.innerHTML = `
       <img src="${song.logo}" alt="${song.title}" class="song-logo"><br>
       <h3>${song.title}</h3>
       <span>${song.artist}</span><br>
     `;
+    songElement.style.setProperty('--avg-shadow', song.color || 'rgba(255, 0, 0, 1)');
     const playButton = document.createElement("button");
     playButton.className = "playButton";
     playButton.innerHTML = "";
