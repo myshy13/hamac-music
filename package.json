@@ -1,0 +1,9 @@
+{
+  "name": "hamac-music",
+  "scripts": {
+    "dev": "deno run --allow-net --allow-env --allow-read --allow-write --allow-sys --watch index.js"
+  },
+  "author": {
+    "name": "Hamish McIntyre"
+  }
+}

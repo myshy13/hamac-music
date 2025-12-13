@@ -1,0 +1,13 @@
+{
+    "songs": [
+        {
+            "title": "never gonna give you up",
+            "artist": "rick astley",
+            "album": "whenever you need somebody",
+            "year": 1987,
+            "genre": "pop",
+            "file": "never_gonna_give_you_up.mp3",
+            "url": "songs/never-gonna-give-you-up.mp3"
+        }
+    ]
+}

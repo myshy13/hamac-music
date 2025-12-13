@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>hamac music</title>
+    <style>
+      body {
+        background-color: #f0f0f0;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+        color: #333;
+        margin: 0;
+      }
+      .navbar {
+        background-color: #333;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        display: flex;
+        justify-content: left;
+        flex-direction: row;
+        align-items: center;
+        gap: 2em;
+        position: relative;
+      }
+      .navbar .navbar-links {
+        display: flex;
+        gap: 1em;
+        position: absolute;
+        right: 2em;
+
+      }
+      .navbar ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      .navbar li {
+        display: inline;
+        margin: 0 15px;
+      }
+      .navbar a {
+        color: white;
+        text-decoration: none;
+      }
+      .navbar a:hover {
+        text-decoration: underline;
+      }
+
+      .search {
+        padding: 5px;
+        border-radius: 5px;
+        border: none;
+        border-radius: 10px;
+background: #e0e0e0;
+box-shadow: inset 3px 3px 7px #c5c5c5,
+            inset -3px -3px 7px #fbfbfb;
+        color: black;
+        outline: none;
+        transition: width 0.3s ease;
+        width: 8em;position: relative;
+      }
+      .search:focus {
+        width: 20em;
+        box-sizing: border-box;
+      }
+      .search::after {
+        content: "GO";
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #888;
+        opacity: 0;
+        z-index: 2;
+        pointer-events: none;
+      }
+      .search:focus::before {
+        opacity: 1;
+        pointer-events: initial;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="/">Home</a>
+        <form action="#" id="searchForm">
+          <input type="search" placeholder="Search..." class="search" id="searchInput"/>
+        </form>
+      <div class="navbar-links">
+        <a href="/listen">Listen</a>
+      </div>
+    </nav>
+    <div id="searchResults"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
