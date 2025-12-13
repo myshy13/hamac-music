@@ -1,4 +1,4 @@
-import express from "npm:express";
+import express from "express";
 import path, { join } from "node:path";
 import * as fs from "node:fs";
 

@@ -1,9 +1,13 @@
 {
   "name": "hamac-music",
+  "type": "module",
   "scripts": {
-    "dev": "deno run --allow-net --allow-env --allow-read --allow-write --allow-sys --watch index.js"
+    "dev": "node index.js"
   },
   "author": {
     "name": "Hamish McIntyre"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
   }
 }
