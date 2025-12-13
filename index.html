@@ -30,7 +30,6 @@
         gap: 1em;
         position: absolute;
         right: 2em;
-
       }
       .navbar ul {
         list-style-type: none;
@@ -54,13 +53,13 @@
         border-radius: 5px;
         border: none;
         border-radius: 10px;
-background: #e0e0e0;
-box-shadow: inset 3px 3px 7px #c5c5c5,
-            inset -3px -3px 7px #fbfbfb;
+        background: #e0e0e0;
+        box-shadow: inset 3px 3px 7px #c5c5c5, inset -3px -3px 7px #fbfbfb;
         color: black;
         outline: none;
         transition: width 0.3s ease;
-        width: 8em;position: relative;
+        width: 8em;
+        position: relative;
       }
       .search:focus {
         width: 20em;
@@ -81,19 +80,50 @@ box-shadow: inset 3px 3px 7px #c5c5c5,
         opacity: 1;
         pointer-events: initial;
       }
+      .playButton {
+        padding: 0em;
+        border: none;
+        background: none;
+        cursor: pointer;
+        border: none;
+        outline: none;
+      }
+      .song {
+        background: white;
+        padding: 1em;
+        margin: 0.5em;
+        border-radius: 10px;
+        box-shadow: 3px 3px 7px #c5c5c5, -1px -1px 7px #939393;
+        width: 10em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 8em;
+        width: 8em;
+        text-align: center;
+      }
+      .results {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        flex-direction: row;
+      }
     </style>
   </head>
   <body>
     <nav class="navbar">
       <a href="/">Home</a>
-        <form action="#" id="searchForm">
-          <input type="search" placeholder="Search..." class="search" id="searchInput"/>
-        </form>
-      <div class="navbar-links">
-        <a href="/listen">Listen</a>
-      </div>
+      <form action="#" id="searchForm">
+        <input
+          type="search"
+          placeholder="Search..."
+          class="search"
+          id="searchInput"
+        />
+      </form>
     </nav>
-    <div id="searchResults"></div>
+    <div id="results" class="results"></div>
     <script src="script.js"></script>
   </body>
 </html>

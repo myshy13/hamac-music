@@ -3,11 +3,30 @@
         {
             "title": "never gonna give you up",
             "artist": "rick astley",
-            "album": "whenever you need somebody",
-            "year": 1987,
             "genre": "pop",
-            "file": "never_gonna_give_you_up.mp3",
+            "file": "never-gonna-give-you-up.mp3",
             "url": "songs/never-gonna-give-you-up.mp3"
+        },
+        {
+            "title": "montagem coma",
+            "artist": "Andromeda",
+            "genre": "phonk",
+            "file": "montagem-coma.mp3",
+            "url": "songs/montagem-coma.mp3"
+        },
+        {
+            "title": "montagem tomada",
+            "artist": "MXZI",
+            "genre": "phonk",
+            "file": "montagem-tomada.mp3",
+            "url": "songs/montagem-tomada.mp3"
+        },
+        {
+            "title": "rush e",
+            "artist": "sheet music boss",
+            "genre": "piano",
+            "file": "rush-e.mp3",
+            "url": "songs/rush-e.mp3"
         }
     ]
 }

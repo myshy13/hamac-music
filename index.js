@@ -11,6 +11,14 @@ app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "index.html"));
 });
 
+app.get("/pause.svg", (req, res) => {
+  res.sendFile(path.join(__dirname, "pause.svg"));
+});
+
+app.get("/play.svg", (req, res) => {
+  res.sendFile(path.join(__dirname, "play.svg"));
+});
+
 app.get("/api/songs", (req, res) => {
   fs.readFile(path.join(__dirname, "songs/songs.json"), "utf8", (err, data) => {
     if (err) {
