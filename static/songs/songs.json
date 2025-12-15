@@ -1,0 +1,85 @@
+{
+    "songs": [
+        {
+            "title": "never gonna give you up",
+            "artist": "rick astley",
+            "genre": "pop",
+            "file": "never-gonna-give-you-up.mp3",
+            "url": "songs/nevergonnagiveyouup/never-gonna-give-you-up.mp3",
+            "logo": "songs/nevergonnagiveyouup/logo.jpg",
+            "color": "#DDDDD3"
+        },
+        {
+            "title": "montagem coma",
+            "artist": "Andromeda",
+            "genre": "phonk",
+            "file": "montagemcoma/montagem-coma.mp3",
+            "url": "songs/montagemcoma/montagem-coma.mp3",
+            "logo": "songs/montagemcoma/logo.webp",
+            "color": "#1e5a9f"
+        },
+        {
+            "title": "montagem tomada",
+            "artist": "MXZI",
+            "genre": "phonk",
+            "file": "montagemtomada/montagem-tomada.mp3",
+            "url": "songs/montagemtomada/montagem-tomada.mp3",
+            "logo": "songs/montagemtomada/logo.webp",
+            "color": "#dede95"
+        },
+        {
+            "title": "rush e",
+            "artist": "sheet music boss",
+            "genre": "piano",
+            "file": "rushe/rush-e.mp3",
+            "url": "songs/rushe/rush-e.mp3",
+            "logo": "songs/rushe/logo.webp",
+            "color": "#ff6600"
+        },
+        {
+            "title": "montagem rugada",
+            "artist": "JXNDRO",
+            "genre": "phonk",
+            "file": "montagemrugada/montagemrugada.mp3",
+            "url": "songs/montagemrugada/montagemrugada.mp3",
+            "logo": "songs/montagemrugada/logo.jpg",
+            "color": "#ff6600"
+        },
+        {
+            "title": "believer",
+            "artist": "Imagine Dragons",
+            "genre": "rock",
+            "file": "believer/believer.mp3",
+            "url": "songs/believer/believer.mp3",
+            "logo": "songs/believer/logo.png",
+            "color": "#2e2e2e"
+        },
+        {
+            "title": "I'm still standing",
+            "artist": "Elton John",
+            "genre": "rock",
+            "file": "stillstanding/im-still-standing.mp3",
+            "url": "songs/stillstanding/im-still-standing.mp3",
+            "logo": "songs/stillstanding/logo.webp",
+            "color": "#0066ff"
+        },
+        {
+            "title":"I'm a banana",
+            "artist": "Onison",
+            "genre": "comedy",
+            "file": "banana/banana.mp3",
+            "url": "songs/banana/banana.mp3",
+            "logo": "songs/banana/logo.jpg",
+            "color": "#FFFF00"
+        },
+        {
+            "title":"Luna Bala",
+            "artist": "Yb Wasg'ood",
+            "genre": "phonk",
+            "file": "lunabala/lunabala.mp3",
+            "url": "songs/lunabala/lunabala.mp3",
+            "logo": "songs/lunabala/logo.webp",
+            "color": "#e6b75a"
+        }
+    ]
+}

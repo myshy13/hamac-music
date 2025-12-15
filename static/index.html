@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>hamac music</title>
+    <style>
+      body {
+        background-color: #f0f0f0;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+        color: #333;
+        margin: 0;
+      }
+      .navbar {
+        background-color: #333;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        display: flex;
+        justify-content: left;
+        flex-direction: row;
+        align-items: center;
+        gap: 2em;
+        position: relative;
+      }
+      .navbar .navbar-links {
+        display: flex;
+        gap: 1em;
+        position: absolute;
+        right: 2em;
+      }
+      .navbar ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      .navbar li {
+        display: inline;
+        margin: 0 15px;
+      }
+      .navbar a {
+        color: white;
+        text-decoration: none;
+      }
+      .navbar a:hover {
+        text-decoration: underline;
+      }
+
+      .search {
+        padding: 5px;
+        border-radius: 5px;
+        border: none;
+        border-radius: 10px;
+        background: #e0e0e0;
+        box-shadow: inset 3px 3px 7px #c5c5c5, inset -3px -3px 7px #fbfbfb;
+        color: black;
+        outline: none;
+        transition: width 0.3s ease;
+        width: 8em;
+        position: relative;
+      }
+      .search:focus {
+        width: 20em;
+        box-sizing: border-box;
+      }
+      .search::after {
+        content: "GO";
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #888;
+        opacity: 0;
+        z-index: 2;
+        pointer-events: none;
+      }
+      .search:focus::before {
+        opacity: 1;
+        pointer-events: initial;
+      }
+      .playButton {
+        padding: 0em;
+        border: none;
+        background: none;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        position: absolute;
+        bottom: 1em;
+      }
+      .song {
+        background: white;
+        padding: 1em;
+        margin: 0.5em;
+        gap: 0px;
+        position: relative;
+        border-radius: 10px;
+        box-shadow: 3px 3px 7px #c5c5c5, -1px -1px 7px #939393;
+        width: 9vw;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        aspect-ratio: 1 / 1;
+        box-sizing: content-box;
+        width: 10em;
+        text-align: center;
+        position: relative;
+      }
+      .results {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        flex-direction: row;
+      }
+      .song-logo {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+        margin-bottom: 0.5em;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .song:hover .song-logo {
+        filter: brightness(70%);
+      }
+      .song:hover > h3, .song:hover > span {
+        z-index: 5;
+        opacity: 1;
+      }
+      .song {
+        transition: all 0.5s ease;
+      }
+      .song h3, .song span {
+        transition: all 0.3s ease;
+        color: white;
+        opacity: 0;
+      }
+      .montagem-tomada .playButton {
+        filter: invert(1);
+      }
+      .song:hover {
+        box-shadow: 0 4px 16px 0 var(--avg-shadow, #e6ddc7);
+      }
+      
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="/">Home</a>
+      <form action="#" id="searchForm">
+        <input
+          type="search"
+          placeholder="Search..."
+          class="search"
+          id="searchInput"
+        />
+      </form>
+    </nav>
+    <div id="results" class="results"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
